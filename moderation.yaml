@@ -27,6 +27,7 @@ kind: Service
 metadata:
   name: moderation-clusterip-srv
 spec:
+  type: LoadBalancer
   selector:
     app: moderation
   ports:
